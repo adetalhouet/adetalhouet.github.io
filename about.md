@@ -4,7 +4,7 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
+I have always been interested in the way information is transmitted through the network. My background in computer science and networking. Combined with the interest in new technology, I've been naturally guided to the SDN field.
 
 ### More Information
 
@@ -12,4 +12,4 @@ A place to include any other types of information that you'd like to include abo
 
 ### Contact me
 
-[email@domain.com](mailto:email@domain.com)
+[adetalhouet89@gmail.com](mailto:adetalhouet89@gmail.com)
