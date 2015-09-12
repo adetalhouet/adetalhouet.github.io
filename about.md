@@ -4,7 +4,7 @@ title: About
 permalink: /about/
 ---
 
-I have always been interested in the way information is transmitted through the network. My background in computer science and networking. Combined with the interest in new technology, I've been naturally guided to the SDN field.
+I have always been interested in the way information is transmitted through the network. My background is in computer science and networking. Combined with the interest in new technology, I've been naturally guided to the SDN field.
 
 ### More Information
 
