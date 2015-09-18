@@ -1,17 +1,17 @@
 ---
 layout: default
 ---
-<div id="article">
-  <div class="article-title">{{ page.title }}</div>
-  <p class="meta">
-    <small>
-      &nbsp;<i class="fa fa-calendar-o"></i> {{ page.date | date_to_string}}
-    </small>
-  </p> <hr/>
-  <div class="post">
+
+<article class="post">
+  <h1>{{ page.title }}</h1>
+
+  <div class="entry">
     {{ content }}
   </div>
-</div>
-{% include share.html %}
-{% include pager.html %}
-{% include comment.html %}
+
+  <div class="date">
+    Written on {{ page.date | date: "%B %e, %Y" }}
+  </div>
+
+  {% include disqus.html %}
+</article>
