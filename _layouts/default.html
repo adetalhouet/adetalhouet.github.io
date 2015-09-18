@@ -1,46 +1,51 @@
 <!DOCTYPE html>
 <html>
-<head>
+  <head>
     <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}</title>
 
     {% include meta.html %}
 
     <!--[if lt IE 9]>
-        <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-        <![endif]-->
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
 
-        <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
-        <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
+    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
+    <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
 
-        <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
-    </head>
+    <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
+  </head>
 
-    <body>
-        <div class="wrapper-masthead">
-            <div class="container">
-                <header class="masthead clearfix">
-                    <h3 class="masthead-title">
-                        <a href="/" title="Home">{{ site.title }}</a>
-                        {% for page in site.pages_list %}
-                        &nbsp;&nbsp;&nbsp;
-                        <small><a href="{{ page[1]  }}">{{ page[0] }}</a></small>
-                        {% endfor %}
-                    </h3>
-                </div>
-            </div>
+  <body>
+    <div class="wrapper-masthead">
+      <div class="container">
+        <header class="masthead clearfix">
+          <a href="{{ site.baseurl }}/" class="site-avatar"><img src="{{ site.avatar }}" /></a>
 
-            <div id="main" role="main" class="container">
-                {{ content }}
-            </div>
+          <div class="site-info">
+            <h1 class="site-name"><a href="{{ site.baseurl }}/">{{ site.name }}</a></h1>
+            <p class="site-description">{{ site.description }}</p>
+          </div>
 
-            <div class="wrapper-footer">
-                <div class="container">
-                    <footer class="footer">
-                        {% include svg-icons.html %}
-                    </footer>
-                </div>
-            </div>
+          <nav>
+            <a href="{{ site.baseurl }}/">Blog</a>
+            <a href="{{ site.baseurl }}/about">About</a>
+          </nav>
+        </header>
+      </div>
+    </div>
 
-            {% include analytics.html %}
-        </body>
-        </html>
+    <div id="main" role="main" class="container">
+      {{ content }}
+    </div>
+
+    <div class="wrapper-footer">
+      <div class="container">
+        <footer class="footer">
+          {% include svg-icons.html %}
+        </footer>
+      </div>
+    </div>
+
+    {% include analytics.html %}
+  </body>
+</html>
