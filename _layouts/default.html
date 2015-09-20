@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <link href="{{ site.avatar }}" rel="shortcut icon">
+      
     <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}</title>
 
     {% include meta.html %}
@@ -46,7 +48,9 @@
         </footer>
       </div>
     </div>
-
+    <p align="center">
+        &copy; 2015. All rights reserved.
+    </p>    
     {% include analytics.html %}
   </body>
 </html>
