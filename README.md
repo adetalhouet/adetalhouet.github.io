@@ -1,6 +1,6 @@
 # Alexis's Blog
 
-Alexis's Blog powered by Jekyll source blob.
+Alexis's Blog powered by Jekyll using Jekyll-now.
 
 Jekyll: https://github.com/jekyll/jekyll
 
