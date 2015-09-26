@@ -256,7 +256,7 @@ It will also start the controller on each nodes. You could, for instance, get in
 FYI, here is a tree dump of my file explorer with only the relevant data:
 
 ```
- tree
+$ tree
 .
 ├── cluster-nodes
 │   ├── LICENSE
@@ -311,7 +311,7 @@ Here is what we get, among other things:
 - the state of the node in the cluster: "Follower"
 
 ```
-adetalhouet@inocybe:~\> curl -v --user "admin":"admin" -H "Accept: application/json" -H "Content-type: application/json" -X GET http://192.168.50.151:8181/jolokia/read/org.opendaylight.controller:Category=Shards,name=member-1-shard-inventory-config,type=DistributedConfigDatastore | python -m json.tool
+$ curl -v --user "admin":"admin" -H "Accept: application/json" -H "Content-type: application/json" -X GET http://192.168.50.151:8181/jolokia/read/org.opendaylight.controller:Category=Shards,name=member-1-shard-inventory-config,type=DistributedConfigDatastore | python -m json.tool
 *   Trying 192.168.50.151...
   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
                                  Dload  Upload   Total   Spent    Left  Speed
