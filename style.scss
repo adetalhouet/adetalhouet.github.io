@@ -18,9 +18,33 @@ html {
 }
 
 body {
-	background: $white;
+  background: $white;
   font: 18px/1.4 $helvetica;
   color: $gray;
+}
+
+table {
+    border:#ccc 2px solid;
+    border-radius:1px;
+    white-space:nowrap;
+}
+table th {
+    padding:21px 25px 22px 25px;
+    border-bottom:3px solid #e0e0e0;
+    border-left: 1px solid #e0e0e0;
+    color: $black;
+    white-space:nowrap;
+}
+table tr {
+    padding-left:20px;
+    white-space:nowrap;
+}
+table td {
+    padding:18px;
+    border-top: 1px solid #ffffff;
+    border-bottom:1px solid #e0e0e0;
+    border-left: 1px solid #e0e0e0;
+    white-space:nowrap;
 }
 
 .container {
@@ -69,7 +93,7 @@ p {
 }
 
 a {
-  color: $black;
+  color: $blue;
   text-decoration: none;
 	cursor: pointer;
   &:hover, &:active {

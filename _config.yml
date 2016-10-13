@@ -26,8 +26,8 @@ footer-links:
   linkedin: adetalhouet
   pinterest:
   rss: # just type anything here for a working RSS icon, make sure you set the "url" above!
-  twitter:
-  stackoverflow: # your stackoverflow profile, e.g. "users/50476/bart-kiers"
+  twitter: adetalhouet
+  stackoverflow: users/6937994/alexis-de-talhouët
   youtube: # channel/<your_long_string> or user/<user-name>
   googleplus: # anything in your profile username that comes after plus.google.com/
 
@@ -54,6 +54,8 @@ baseurl: ""
 #
 
 markdown: redcarpet
+redcarpet:
+  extensions: ["no_intra_emphasis", "fenced_code_blocks", "autolink", "tables", "strikethrough", "superscript", "with_toc_data"]
 highlighter: pygments
 permalink: /:title/
 

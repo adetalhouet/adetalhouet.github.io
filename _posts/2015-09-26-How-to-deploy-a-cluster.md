@@ -3,9 +3,8 @@ layout: post
 title: How to deploy an cluster using OpenDaylight?
 ---
 
-To deploy a cluster using OpenDaylight, you will need multiple VMs and/or containers. Using VMs can be really resource consuming, so I will present a way to deploy a cluster using both VMs and containers.
+To deploy a cluster using OpenDaylight, you will need multiple VMs.
 
-In the first version of this blog post, I will do it with VMs, but I'll revisit the post presenting containers.
 ##Prerequisites
 ####OpenDaylight
 
