@@ -33,7 +33,7 @@ I created a repo hosting a Vagrantfile spawning VMs with the following network c
 These are the steps to follow:
 
 ``` 
-$ git clone https://github.com/adetalhouet/cluster-nodes.git 
+$ git clone -b lithium https://github.com/adetalhouet/cluster-nodes.git 
 $ cd cluster-nodes
 $ export NUM_OF_NODES=3
 $ vagrant up
