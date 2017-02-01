@@ -40,5 +40,4 @@ I have a good knowledge of the Android platform and have develop a few apps:
 
 ## Contact me
 
-[Personal email](mailto:adetalhouet89@gmail.com) <br>
-[Profesional email](mailto:adetalhouet@inocybe.com)
+[Email](mailto:adetalhouet89@gmail.com) <br>
