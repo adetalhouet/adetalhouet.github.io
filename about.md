@@ -43,9 +43,9 @@ Rancher, Helm, Kubernetes, Docker
 
 ### Honors & Awards
 
-- Elected Committer-At-Large member of the [Technical Steering Committee](https://www.opendaylight.org/governance) for Boron release. </br>
-- Project Technical Lead of [Armoury](https://wiki.opendaylight.org/view/Armoury) project. </br>
-- Committer of [NIC](https://wiki.opendaylight.org/view/Network_Intent_Composition:Main) and [UniMgr](https://wiki.opendaylight.org/view/Unimgr:Main) projects. </br>
+- Elected Committer-At-Large member of the [Technical Steering Committee](https://www.opendaylight.org/governance) for Boron release.
+- Project Technical Lead of [Armoury](https://wiki.opendaylight.org/view/Armoury) project.
+- Committer of [NIC](https://wiki.opendaylight.org/view/Network_Intent_Composition:Main) and [UniMgr](https://wiki.opendaylight.org/view/Unimgr:Main) projects.
 
 ## Student development projects
 I have a good knowledge of the Android platform and have develop a few apps:
