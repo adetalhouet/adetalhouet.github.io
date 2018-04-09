@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How to deploy an cluster using OpenDaylight?
+title: [Deprecated] How to deploy an cluster using OpenDaylight?
 ---
 
 To deploy a cluster using OpenDaylight, you will need multiple VMs.
