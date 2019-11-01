@@ -14,4 +14,4 @@ permalink: /talks/
 | ONAP, an overview | SDN Meetup | August 2017 | [Slides](https://drive.google.com/file/d/1HrUYmryD7vXCI6OSCNz9iNpdtubRhcp9/view?usp=sharing)| No Video |
 | The ONAP Journey to Platform Maturity | ONS | Mars 2018 | [Slides](https://schd.ws/hosted_files/onsna18/9d/ONAP%20Journey%20to%20Platform%20Maturity.pdf)| No Video |
 | ONAP Controller Framework Evolution with CDS | ONS | Sept 2019 | [Slides](https://static.sched.com/hosted_files/onseu19/6d/ONS_ONAP_Controller_Framework_Evolution_with_CDS.pptx)| No Video |
-| The ONAP Journey to Platform Maturity | ONS | Sept 2019 | [Slides](https://static.sched.com/hosted_files/onseu19/57/Extendable%20workflow%20for%20ONAP%20Service%20Orchestrator.pptx)| No Video |
+| Extendable Workflow for ONAP Service Orchestrator | ONS | Sept 2019 | [Slides](https://static.sched.com/hosted_files/onseu19/57/Extendable%20workflow%20for%20ONAP%20Service%20Orchestrator.pptx)| No Video |
