@@ -4,14 +4,15 @@ title: About
 permalink: /about/
 ---
 
-<p align="justify">
 I've done 5+ years of Network Automation / Orchestration - contributed a lot to, and was a technical steering community member of, Linux Foundation Open Source community ONAP and OpenDaylight.
+
 I'm a Java-land guy, discover Kotlin in 2018, in love with it.
+
 Pretty passionated about Kubernetes and all the Cloud Native stuff, I've deployed, managed and operated various clusters of various size.
+
 I started in Sept 2019 working on Hybrid Cloud, establishing the strategy and implementing it.
 
 I strive to build an overall, yet very technical, knowledge of leading edge technology in network automation, progamming and cloud computing.
-</p >
 
 ## Open Source participation
 
