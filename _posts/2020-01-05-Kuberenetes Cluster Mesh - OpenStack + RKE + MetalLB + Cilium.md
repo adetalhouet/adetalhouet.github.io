@@ -1,3 +1,8 @@
+---
+layout: post
+title: Kuberenetes Cluster Mesh - OpenStack + RKE + MetalLB + Cilium
+---
+
 # Kuberenetes Cluster Mesh - OpenStack + RKE + MetalLB + Cilium
 
 I will guide you through the setup of a Kubernetes Cluster Mesh using OpenStack as hypervisor, RKE as K8S deployer, MetalLB as Load Balancer provider and Cilium as CNI.
