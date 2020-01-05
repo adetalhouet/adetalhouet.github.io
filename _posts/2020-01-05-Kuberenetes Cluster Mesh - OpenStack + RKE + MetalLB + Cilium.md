@@ -7,8 +7,7 @@ I will guide you through the setup of a Kubernetes Cluster Mesh using OpenStack 
 In this tutorial we will use a single network, but more complex network setup should work just fine as long as routing is properly in place.
 
 **Overall Architecture**
-![](https://raw.githubusercontent.com/adetalhouet/adetalhouet.github.io/master/images/2020-01-05-Kuberenetes_Cluster_Mesh/clustermesh.png)
-
+<a href="https://raw.githubusercontent.com/adetalhouet/adetalhouet.github.io/master/images/2020-01-05-Kuberenetes_Cluster_Mesh/clustermesh.png" rel="Overall Architecture">![Foo](https://raw.githubusercontent.com/adetalhouet/adetalhouet.github.io/master/images/2020-01-05-Kuberenetes_Cluster_Mesh/clustermesh.png)</a>
 
 ## Pre-requisites
 * OpenStack
@@ -77,10 +76,10 @@ Either through the  UI, or using OpenStack CLI, create both HEAT stack:
 You should get the following in Horizon:
 
 **Openstack Instances**
-![](https://raw.githubusercontent.com/adetalhouet/adetalhouet.github.io/master/images/2020-01-05-Kuberenetes_Cluster_Mesh/openstack-instances.png)
+<a href="https://raw.githubusercontent.com/adetalhouet/adetalhouet.github.io/master/images/2020-01-05-Kuberenetes_Cluster_Mesh/openstack-instances.png" rel="Openstack Instances">![Foo](https://raw.githubusercontent.com/adetalhouet/adetalhouet.github.io/master/images/2020-01-05-Kuberenetes_Cluster_Mesh/openstack-instances.png)</a>
 
 **Openstack Stacks**
-![](https://raw.githubusercontent.com/adetalhouet/adetalhouet.github.io/master/images/2020-01-05-Kuberenetes_Cluster_Mesh/openstack-stacks.png)
+<a href="https://raw.githubusercontent.com/adetalhouet/adetalhouet.github.io/master/images/2020-01-05-Kuberenetes_Cluster_Mesh/openstack-stacks.png" rel="Openstack Instances">![Foo](https://raw.githubusercontent.com/adetalhouet/adetalhouet.github.io/master/images/2020-01-05-Kuberenetes_Cluster_Mesh/openstack-stacks.png)</a>
 
 ### Deploy Kubernetes
 Now that we have our 6 VMs provisioned with Docker we can deploy Kubernetes. 
