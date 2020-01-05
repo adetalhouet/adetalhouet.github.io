@@ -3,6 +3,10 @@
 I will guide you through the setup of a Kubernetes Cluster Mesh using OpenStack as hypervisor, RKE as K8S deployer, MetalLB as Load Balancer provider and Cilium as CNI.
 In this tutorial we will use a single network, but more complex network setup should work just fine as long as routing is properly in place.
 
+**Overall Architecture**
+![](https://raw.githubusercontent.com/adetalhouet/adetalhouet.github.io/master/images/2020-01-05-Kuberenetes_Cluster_Mesh/clustermesh.png)
+
+
 ## Pre-requisites
 * OpenStack
 	* Image: Ubuntu bionic - 18.04 (Linux kernel >= 4.9 is a requirement from Cilium)
@@ -68,8 +72,12 @@ Either through the  UI, or using OpenStack CLI, create both HEAT stack:
     $ openstack stack create -t k8s-cluster-2.yaml k8s-cluster-2
 
 You should get the following in Horizon:
-[](../images/2020-01-05-Kuberenetes_Cluster_Mesh/openstack-instances.png)
-image2
+
+**Openstack Instances**
+![](https://raw.githubusercontent.com/adetalhouet/adetalhouet.github.io/master/images/2020-01-05-Kuberenetes_Cluster_Mesh/openstack-instances.png)
+
+**Openstack Stacks**
+![](https://raw.githubusercontent.com/adetalhouet/adetalhouet.github.io/master/images/2020-01-05-Kuberenetes_Cluster_Mesh/openstack-stacks.png)
 
 ### Deploy Kubernetes
 Now that we have our 6 VMs provisioned with Docker we can deploy Kubernetes. 
