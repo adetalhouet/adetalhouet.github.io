@@ -1,11 +1,8 @@
-
 ---
-
 layout:  post
-
 title:  OpenShift 4.4 + RedHat SSO (Keycloak) as IdP
-
 ---
+
 Even though it is a straightforward setup, I struggled to get the recipe right. So sharing my findings.
 
 The official recipe is provided in this [documentation](https://access.redhat.com/documentation/en-us/red_hat_single_sign-on/7.4/) or this [documentation](https://docs.openshift.com/container-platform/4.4/authentication/identity_providers/configuring-oidc-identity-provider.html) but I found it difficult to follow..
