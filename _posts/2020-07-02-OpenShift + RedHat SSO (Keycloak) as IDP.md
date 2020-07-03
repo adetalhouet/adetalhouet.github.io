@@ -25,8 +25,11 @@ You will also need to have CLI access to the cluster, although eveything can be 
 1. From the `OperatorHub`, search for, then install, Red Hat Single Sign-On Operator. You can either install in all namesapces, or in a specific namespace. In this example, we installed the operator in the `keycloak` namespace, previsously created.
 2. From the operator, create a Keycloak instance.
 3. From the namespace where you've deployed the Keycloak instance, get the admin credentials - you can also get this from the admin Dashboard.
-`kubectl get secret -n keycloak credential-keycloak
-    -o=jsonpath='{.data.ADMIN_PASSWORD}' | base64 --decode`
+
+~~~
+kubectl get secret -n keycloak credential-keycloak -o=jsonpath='{.data.ADMIN_PASSWORD}' | base64 --decode`
+~~~
+
 4. Log into the Keycloak Administrator console, using the password previously retrieved, with the username being `admin`. In this example, it's FQDN is `https://keycloak-keycloak.apps.adt.openshift.openstack216.nso.ltec.int.bell.ca/auth/`
 
 ## Configure Keycloak
@@ -45,13 +48,19 @@ In my case, it looks like this: `https://oauth-openshift.apps.adt.openshift.open
 If you have a self signed certificate, you will need to provide it in the configuration to avoid `# x509: certificate signed by unknown authority`
 Retrieve the certificate associated with the apps domain. In my case, `apps-adt-openshift-openstack216-nso-ltec-int-bell-ca`
 Then create a configmap holding the certificate:
-`oc create configmap ca-config-map --from-file=ca.crt=apps-adt-openshift-openstack216-nso-ltec-int-bell-ca.pem -n openshift-config`
+
+~~~
+oc create configmap ca-config-map --from-file=ca.crt=apps-adt-openshift-openstack216-nso-ltec-int-bell-ca.pem -n openshift-config
+~~~
+
 In my case, the configmap is called `ca-config-map`.
 
 #### Create a secret holding the `clientSecret` as identified during the configuration of Keycloak
 
-`oc create secret generic <secret_name> --from-literal=clientSecret=<secret> -n openshift-config`
-In my case, the secret is called `openid-client-secret-vv5dn`
+~~~
+oc create secret generic <secret_name> --from-literal=clientSecret=<secret> -n openshift-config`
+In my case, the secret is called `openid-client-secret-vv5dn
+~~~
 
 #### Get the issuer URL - which must be HTTPS
 
