@@ -30,7 +30,7 @@ You will also need to have CLI access to the cluster, although eveything can be 
 kubectl get secret -n keycloak credential-keycloak -o=jsonpath='{.data.ADMIN_PASSWORD}' | base64 --decode`
 ~~~
 
-4. Log into the Keycloak Administrator console, using the password previously retrieved, with the username being `admin`. In this example, it's FQDN is `https://keycloak-keycloak.apps.adt.openshift.openstack216.nso.ltec.int.bell.ca/auth/`
+4. Log into the Keycloak Administrator console, using the password previously retrieved, with the username being `admin`. In this example, it's FQDN is `https://keycloak-keycloak.apps.adt.openshift.openstack216.ca/auth/`
 
 ## Configure Keycloak
 
@@ -39,7 +39,7 @@ For that, you can simply follow step [### 5.3.1. Configuring Red Hat Single Sign
 For the client configuration element `Valid Redirect URIs`, you need to specify as follow:
 `https://oauth-openshift.apps.<cluster_name>.<cluster_domain>/oauth2callback/<idp_provider_name>`
 The `idp_provider_name` **must** be the same name as the OAuth name that we will configure in next section.
-In my case, it looks like this: `https://oauth-openshift.apps.adt.openshift.openstack216.nso.ltec.int.bell.ca/oauth2callback/keycloak`
+In my case, it looks like this: `https://oauth-openshift.apps.adt.openshift.openstack216.ca/oauth2callback/keycloak`
 
 ## Configure OpenShift OAuth
 
@@ -65,7 +65,7 @@ In my case, the secret is called `openid-client-secret-vv5dn
 #### Get the issuer URL - which must be HTTPS
 
 The easiest way to get it, is true Keycloak Administrator dashboard, under the `Realm Settings`. Click on the `OpenID Endpoint Configuration` next to `Endpoints`, and you should find the issuer URL there.
-In my case, it is the following: `https://keycloak-keycloak.apps.adt.openshift.openstack216.nso.ltec.int.bell.ca/auth/realms/OpenShift`
+In my case, it is the following: `https://keycloak-keycloak.apps.adt.openshift.openstack216.ca/auth/realms/OpenShift`
 
 #### Build the OAuth configuration template
 
@@ -95,7 +95,7 @@ spec:
       clientSecret:
         name: openid-client-secret-vv5dn
       extraScopes: []
-      issuer: https://keycloak-keycloak.apps.adt.openshift.openstack216.nso.ltec.int.bell.ca/auth/realms/OpenShift
+      issuer: https://keycloak-keycloak.apps.adt.openshift.openstack216.ca/auth/realms/OpenShift
     type: OpenID
 ~~~
 
@@ -113,7 +113,7 @@ kind: OAuthClient
 metadata:
   name: keycloak
 redirectURIs:
-- https://oauth-openshift.apps.adt.openshift.openstack216.nso.ltec.int.bell.ca/oauth2callback/keycloak
+- https://oauth-openshift.apps.adt.openshift.openstack216.ca/oauth2callback/keycloak
 secret: openid-client-secret-vv5dn
 ~~~
 
