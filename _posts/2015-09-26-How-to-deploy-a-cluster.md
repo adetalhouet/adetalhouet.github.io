@@ -5,24 +5,24 @@ title: Deprecated - How to deploy an cluster using OpenDaylight?
 
 To deploy a cluster using OpenDaylight, you will need multiple VMs.
 
-##Prerequisites
-####OpenDaylight
+## Prerequisites
+#### OpenDaylight
 
 * Maven 3.3.3 - [https://maven.apache.org/download.cgi](https://maven.apache.org/download.cgi)
 * JDK 1.7 - [http://www.oracle.com/technetwork/java/javase/downloads/jdk7.html](http://www.oracle.com/technetwork/java/javase/downloads/jdk7-downloads-1880260.html0)
 
-####VM
+#### VM
 In order to deploy VMs, I will use [Vagrant](https://www.vagrantup.com/).
 
 * Vagrant 1.7.4 - [https://www.vagrantup.com/downloads.html](https://www.vagrantup.com/downloads.html)
 
 
-####Container
+#### Container
 In order to deploy containers, I will use [Docker](https://www.docker.com/).
 
 * Docker version 1.8.2 - [https://docs.docker.com/installation/](https://docs.docker.com/installation/)
 
-##Vagrant VM
+## Vagrant VM
 I created a repo hosting a Vagrantfile spawning VMs with the following network characteristics:
 
 * Adapter 1: NAT
@@ -95,7 +95,7 @@ Last login: Sat Sep 26 14:17:44 2015 from 192.168.50.1
 vagrant@node-3:~$ 
 ```
 
-##OpenDaylight distribution
+## OpenDaylight distribution
 Two options are feasible; in the end, what we need is the .zip containing the distribution. <br>
 
 1. Depending on the distribution you want to have in your cluster, download the relevant project from the [OpenDaylight repository](https://git.opendaylight.org/gerrit/#/admin/projects/). <br> For example, if you want to test the Network Intent Composition project in a cluster, do the following:
@@ -119,7 +119,7 @@ Two options are feasible; in the end, what we need is the .zip containing the di
     distribution-karaf-0.3.1-Lithium-SR1.zip
     ```
 
-##Deploying the cluster
+## Deploying the cluster
 To deploy the cluster using VMs, or containers, let's use the cluster-deployer develops by the OpenDaylight Integration team.
 
 ```
@@ -380,7 +380,7 @@ $ curl -v --user "admin":"admin" -H "Accept: application/json" -H "Content-type:
 }
 ```
 
-##References
+## References
   * [Deployment of 3 Nodes Cluster](https://wiki.opendaylight.org/view/CrossProject:Integration_Group:Controller-Cluster_Deployment#Deployment_of_3_Node_Cluster)
   * [Cluster deployer](https://git.opendaylight.org/gerrit/gitweb?p=integration/test.git;a=tree;f=tools/clustering/cluster-deployer;h=a11fc3d5526d96b4a202411df7727310ea493580;hb=HEAD)
   * [OpenDaylight wiki page presenting the clustering architecture](https://wiki.opendaylight.org/view/OpenDaylight_Controller:MD-SAL:Architecture:Clustering)
