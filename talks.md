@@ -16,4 +16,4 @@ permalink: /talks/
 | ONAP Controller Framework Evolution with CDS | ONS | Sept 2019 | [Slides](https://static.sched.com/hosted_files/onseu19/6d/ONS_ONAP_Controller_Framework_Evolution_with_CDS.pptx)| No Video |
 | Extendable Workflow for ONAP Service Orchestrator | ONS | Sept 2019 | [Slides](https://static.sched.com/hosted_files/onseu19/57/Extendable%20workflow%20for%20ONAP%20Service%20Orchestrator.pptx)| No Video |
 | How to manage a fleet of K8S clusters | Montréal Red Hat User Group | Feb 2022 | [Meetup Group](https://www.meetup.com/RHUGMontreal/events/283482669/) | -
-| 5G IN 5 MINUTES - REAL-WORLD INSIGHT INTO OPEN NETWORK TRANSFORMATION | 5G Blitz Week: Spring Edition | Feb 2022 | - | [On demand recording](https://www.fiercedigitaltechevents.com/fiercedigitaltechevent/5g-blitz-week-spring-edition-2022)
+| 5G in 5 minutes | 5G Blitz Week: Spring Edition | Feb 2022 | - | [On demand recording](https://www.fiercedigitaltechevents.com/fiercedigitaltechevent/5g-blitz-week-spring-edition-2022)
